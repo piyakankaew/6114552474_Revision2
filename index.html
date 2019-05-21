@@ -507,10 +507,10 @@
 			//['Bangkok',902238.1,5022016.31]
 				]);
 			var options = {
-					region: 'TH',
-			    resolution: 'provinces',
-			    height:650,
-			    colorAxis: {colors: [ 'lightyellow','yellow','gold','orange','salmon','crimson','red']}
+				region: 'TH',
+			    	resolution: 'provinces',
+			    	height: 500,width:700,
+			    	colorAxis: {colors: [ 'lightyellow','yellow','gold','orange','salmon','crimson','red']}
 			};
 			var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 			chart.draw(data, options);
@@ -533,8 +533,10 @@
 							['North'	,34559.8],
 			]);
 			var options = {
-			  title: "ผลการจัดเก็บภาษี กรมสรรพากร แบ่งตามภูมิภาค 2560",		
-			  colors: ['FIREBRICK', 'ORANGERED' , 'DARKORANGE', 'gold','yellow']
+			  title: "ผลการจัดเก็บภาษี กรมสรรพากร แบ่งตามภูมิภาค 2560",	
+			  height: 500,
+			  sliceVisibilityThreshold: .1,
+						colors: ['FIREBRICK', 'gold','yellow']
 			};
 			var chart = new google.visualization.PieChart(document.getElementById('regions_pie'));
 			chart.draw(data, options);
