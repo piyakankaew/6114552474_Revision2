@@ -203,8 +203,10 @@
 			  height: 500,
 			  histogram: { bucketSize: 50000,
 				       lastBucketPercentile: 10},
-        		  vAxis: {title: 'จำนวน(จังหวัด)'},
-			  hAxis: {title: 'GPP(ล้านบาท)'}, 
+        		  vAxis: {title: 'จำนวน(จังหวัด)',
+        				textStyle: {fontSize:18}},
+			  hAxis: {title: 'GPP(ล้านบาท)',
+        				textStyle: {fontSize:18}}, 
 			};
 			var chart = new google.visualization.Histogram(document.getElementById('distribution_gpp'));
 			chart.draw(data, options);
@@ -306,8 +308,10 @@
 			  legend: { position: 'none' },
 			  histogram: { bucketSize: 2000,
 				       lastBucketPercentile: 15},
-        		  vAxis: {title: 'จำนวน(จังหวัด)'},
-			  hAxis: {title: 'TAX(ล้านบาท)'},     
+        		  vAxis: {title: 'จำนวน(จังหวัด)',
+        				textStyle: {fontSize:18}},
+			  hAxis: {title: 'TAX(ล้านบาท)',
+        				textStyle: {fontSize:18}},     
 			};
 			var chart = new google.visualization.Histogram(document.getElementById('distribution_tax'));
 			chart.draw(data, options);
@@ -404,8 +408,10 @@
 				]);
 			var options = {
 			  //title: 'TAX vs GPP 2017',
-			  vAxis: {title: 'TAX(ล้านบาท)'},
-			  hAxis: {title: 'GPP(ล้านบาท)'},
+			  vAxis: {title: 'TAX(ล้านบาท)',
+        				textStyle: {fontSize:18}},
+			  hAxis: {title: 'GPP(ล้านบาท)',
+        				textStyle: {fontSize:18}},
 			  height: 600,
 			  legend: 'none'
 			};
