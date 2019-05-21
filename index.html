@@ -41,9 +41,9 @@
 			  },
 			  
 			  vAxis: {title: 'จำนวนเงิน(หมื่นล้านบาท)',
-        				textStyle: {fontSize:18}},
+        			  textStyle: {fontSize:18}},
 			  hAxis: {title: 'ปีงบประมาณ',
-        				textStyle: {fontSize:18}},
+        			  textStyle: {fontSize:18}},
 			};
 			var materialChart = new google.charts.Bar(document.getElementById('time_series'));
 			materialChart.draw(data, google.charts.Bar.convertOptions(options));
@@ -97,8 +97,10 @@
 			  //title : 'ผลการจัดเก็บภาษี กรมสรรพากร ปีงบประมาณ 2560 เทียบกับปี 2561',
 			  width: 1400,
 			  height: 600, 
-			  vAxis: {title: 'อัตราเพิ่ม(%)'},
-			  hAxis: {title: 'ประเภทภาษี'},
+			  vAxis: {title: 'อัตราเพิ่ม(%)',
+        			  textStyle: {fontSize:18}},
+			  hAxis: {title: 'ประเภทภาษี',
+        			  textStyle: {fontSize:18}},
 			  seriesType: 'bars',
 			  series: {1: {type: 'line'}},
 			  legend: { position: "none" }
