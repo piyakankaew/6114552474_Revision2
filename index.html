@@ -40,8 +40,10 @@
 			    groupWidth: "75%"
 			  },
 			  
-			  vAxis: {title: 'จำนวนเงิน(หมื่นล้านบาท)'},
-			  hAxis: {title: 'ปีงบประมาณ'},
+			  vAxis: {title: 'จำนวนเงิน(หมื่นล้านบาท)',
+        				textStyle: {fontSize:18}},
+			  hAxis: {title: 'ปีงบประมาณ',
+        				textStyle: {fontSize:18}},
 			};
 			var materialChart = new google.charts.Bar(document.getElementById('time_series'));
 			materialChart.draw(data, google.charts.Bar.convertOptions(options));
@@ -533,8 +535,8 @@
 							['North'	,34559.8],
 			]);
 			var options = {
-			  title: "ผลการจัดเก็บภาษี กรมสรรพากร แบ่งตามภูมิภาค 2560",	
-			  height: 500,
+			  title: "ผลการจัดเก็บภาษี แบ่งตามภูมิภาค",	
+			  height: 400,
 			  sliceVisibilityThreshold: .1,
 						colors: ['FIREBRICK', 'gold','yellow']
 			};
