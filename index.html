@@ -516,6 +516,30 @@
 			chart.draw(data, options);
 		      }
 		</script>
+		
+		<script type="text/javascript">
+		//=================================================================
+		//============================Pie region===========================
+		//=================================================================
+			google.charts.load('current', {'packages':['corechart']});
+		        google.charts.setOnLoadCallback(drawChart);
+		        function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+			  ['ประเภทภาษี', '2560'],
+			  ['Bangkok and Suburb cities',	1079352.3],
+							['Central'	,321167.94],
+							['Northeast',	43837.9],
+							['South',	41899.08],
+							['North'	,34559.8],
+			]);
+			var options = {
+			  title: "ผลการจัดเก็บภาษี กรมสรรพากร แบ่งตามภูมิภาค 2560",		
+			  colors: ['FIREBRICK', 'ORANGERED' , 'DARKORANGE', 'gold','yellow']
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('regions_pie'));
+			chart.draw(data, options);
+		        }
+		</script>
 	</head>
 	<body>
 		<table border="0" style="width: 90%;margin-right:100px" align="canter">
@@ -634,8 +658,12 @@
 				</td>
 			</tr>
 			<tr>
-				<td colspan="2">
+				<td>
 					<div id="regions_div"></div>
+				</td>
+				<td>
+					
+					<div id="regions_pie"></div>
 				</td>
 			</tr>
 			<tr>
